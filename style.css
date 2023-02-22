@@ -100,7 +100,7 @@ body {
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 /* A elements that don't have a class get default styles */
@@ -216,7 +216,6 @@ body {
     max-width: 35rem;
     background: var(--clr-footer);
     border-radius: var(--size-100);
-
     transform: translateY(-135%);
 }
 
@@ -229,26 +228,6 @@ body {
     animation: 1000ms slide-in;
     animation-timing-function: cubic-bezier(.63,-0.55,0,1.09);
     transform: translateY(0%);
-}
-
-@keyframes slide-in {
-    from {
-        transform: translateY(-135%);
-    }
-
-    to {
-        transform: translateY(0%);
-    }
-}
-
-@keyframes slide-out {
-    from {
-        transform: translateY(0%);
-    }
-
-    to {
-        transform: translateY(-135%);
-    }
 }
 
 .primary-navigation > ul > li {
@@ -370,9 +349,17 @@ body {
     padding-left: 1.125rem;
 }
 
+@media (max-width: 23.75rem) {
+    .input {
+        width: 17.272rem;
+    }
+    
+}
+
 .message {
     height: 9.563rem;
     padding-top: 0.938rem;
+    resize: none;
 }
 
 .input:focus,
@@ -559,6 +546,10 @@ body {
     line-height: 1.2;
 }
 
+.line-height-13 {
+    line-height: 1.3;
+}
+
 .fs-100 { font-size: var(--fs-100); }
 .fs-200 { font-size: var(--fs-200); }
 .fs-300 { font-size: var(--fs-300); }
@@ -711,3 +702,24 @@ body {
 .padding-right-700 { padding-right: var(--size-700); }
 .padding-right-800 { padding-right: var(--size-800); }
 .padding-right-900 { padding-right: var(--size-900); }
+
+/* Animations */
+@keyframes slide-in {
+    from {
+        transform: translateY(-135%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-135%);
+    }
+}
