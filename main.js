@@ -8,4 +8,5 @@ navButton.addEventListener('click', () => {
     : navButton.setAttribute("aria-expanded", true);
     navigation.toggleAttribute("data-visible");
     header.toggleAttribute("data-overlay")
+    navigation.classList.add('close');
 });

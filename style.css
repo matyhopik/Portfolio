@@ -218,11 +218,37 @@ body {
     border-radius: var(--size-100);
 
     transform: translateY(-135%);
-    transition: transform 350ms ease-out;
+}
+
+.close {
+    animation: 1000ms slide-out;
+    animation-timing-function: cubic-bezier(.63,-0.55,0,1.09);
 }
 
 .primary-navigation[data-visible] {
+    animation: 1000ms slide-in;
+    animation-timing-function: cubic-bezier(.63,-0.55,0,1.09);
     transform: translateY(0%);
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-135%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(-135%);
+    }
 }
 
 .primary-navigation > ul > li {
