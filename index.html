@@ -7,7 +7,7 @@
     <title><!-- Title --></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Font Here... -->
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/1b2c072852.js" crossorigin="anonymous"></script>
   </head>
@@ -15,19 +15,179 @@
   <body>
 
     <header class="primary-header">
-
+      <div class="container / sm-display-flex sm-align-items-center sm-justify-content-between padding-inline-100">
+        <a href="/" class="header__title / fs-600 text-primary-400 ff-secondary">MH.</a>
+        <!-- Mobile => -->
+        <button class="nav-responsive__button" aria-controls="primary-navigation" aria-expanded="false">
+          <div class="nav-responsive__button-open"></div>
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation">
+          <ul aria-label="Primary" role="list">
+            <li><a href=""><span>01.</span>Domů</a></li>
+            <li><a href=""><span>02.</span>O mně</a></li>
+            <li><a href=""><span>03.</span>Projekty</a></li>
+            <li><a href=""><span>04.</span>Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
 
-        <!-- Sections > content -->
+        <section class="home">
+          <div class="container">
+            <div class="home-welcome / margin-top-700">
+              <p class="fs-500 text-primary-400">Jmenuji se</p>
+              <h1 class="padding-top-200 padding-bottom-400 fs-900 text-neutral-200 fw-bold">Matěj Hopp</h1>
+              <p class="fs-600 text-neutral-300">a jsem nadšený back-end developer studující na střední škole.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="about">
+          <div class="section-title">
+            <h2><span>02.</span>O mně</h2>
+          </div>
+          <div class="container / margin-top-200">
+            <div class="about-wrapper">
+              <div class="about-text">
+                <p class="fs-550 text-neutral-200">Jmenuji se <span class="fw-bold text-primary-400">Matěj Hopp</span>,</p>
+                <p class="margin-top-200 fs-400 text-neutral-300">je mi 18 let a jsem studentem střední školy se
+                  zaměřením na IT. Vytvářím weby ať už z touhy se více naučit tak i ze zábavy. Pracuji v PHP frameworku Symfony a příležitostně i Laravel.Weby umím designovat a vytvářet jak pro počítače tak i pro mobilní
+                  zařízení.</p>
+              </div>
+              <div class="about-skills / sm-display-grid margin-block-700">
+  
+                <div class="skill frontend">
+                  <p class="skill-title">
+                    Front-end
+                  </p>
+                  <ul class="skill-content" role="list">
+                    <li>
+                      <p>Html</p>
+                    </li>
+                    <li>
+                      <p>Css</p>
+                    </li>
+                    <li>
+                      <p>Javascript</p>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div class="skill backend">
+                  <p class="skill-title">
+                    Back-end
+                  </p>
+                  <ul class="skill-content" role="list">
+                    <li>
+                      <p>Php</p>
+                    </li>
+                    <li>
+                      <p>Symfony</p>
+                    </li>
+                    <li>
+                      <p>Laravel</p>
+                    </li>
+                  </ul>
+                </div>
+  
+                <div class="skill sql">
+                  <p class="skill-title">
+                    Sql
+                  </p>
+                  <ul class="skill-content" role="list">
+                    <li>
+                      <p>MySql</p>
+                    </li>
+                    <li>
+                      <p>MariaDB</p>
+                    </li>
+                  </ul>
+                </div>
+  
+                <div class="skill others">
+                  <p class="skill-title">
+                    Ostatní
+                  </p>
+                  <ul class="skill-content" role="list">
+                    <li>
+                      <p>Git</p>
+                    </li>
+                    <li>
+                      <p>Figma</p>
+                    </li>
+                  </ul>
+                </div>
+  
+              </div>
+              <div class="about-cv / sm-text-align-center">
+                <button class="button">Moje CV</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects">
+          <div class="section-title">
+            <h2><span>03.</span>Projekty</h2>
+          </div>
+          <div class="container">
+            <div class="projects-grid / margin-top-600">
+              <div class="project"></div>
+              <div class="project"></div>
+              <div class="project"></div>
+              <div class="project"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact">
+          <div class="section-title">
+            <h2><span>04.</span>Kontakt</h2>
+          </div>
+          <div class="container">
+            <form class="contact-form / margin-top-700 sm-display-grid sm-justify-items-center" action="">
+              <div class="column sm-display-grid sm-justify-items-center">
+                <input class="input subject" type="text" placeholder="Předmět...">
+                <input class="input email" type="email" placeholder="E-mail...">
+              </div>
+              <div class="column">
+                <textarea class="input message" placeholder="Zpráva..." name="" id=""></textarea>
+              </div>
+              <div class="submit / sm-text-align-center">
+                <input class="button" type="submit" value="Odeslat">
+              </div>
+            </form>
+          </div>
+        </section>
 
     </main>
 
-    <footer class="primary-footer">
-
+    <footer class="primary-footer / padding-top-600">
+      <div class="container / sm-display-grid sm-justify-content-center sm-align-items-start" style="--gap: var(--size-700)">
+        <a href="/" class="footer__title / fs-600 text-primary-400 ff-secondary sm-text-align-center">MH.</a>
+        <ul class="footer__socials / sm-display-flex sm-justify-content-center" style="--gap: 1.813rem" role="list">
+          <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+          <li><a href=""><i class="fa-regular fa-paper-plane"></i></a></li>
+          <li><a href=""><i class="fa-regular fa-file-lines"></i></a></li>
+        </ul>
+        <nav class="primary-footer__nav">
+          <ul aria-label="Footer" role="list">
+            <li><a href=""><span>01.</span>Domů</a></li>
+            <li><a href=""><span>02.</span>O mně</a></li>
+            <li><a href=""><span>03.</span>Projekty</a></li>
+            <li><a href=""><span>04.</span>Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="footer__cv / sm-text-align-center">
+          <button class="button" type="small">Moje CV</button>
+        </div>
+        <p class="footer__copyright / text-neutral-400 fs-400 fw-regular sm-text-align-center">Copyright 2023©</p>
+      </div>
     </footer>
     
-    <script src="/main.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
