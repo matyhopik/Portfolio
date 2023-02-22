@@ -217,14 +217,17 @@ body {
     background: var(--clr-footer);
     border-radius: var(--size-100);
     transform: translateY(-135%);
+    display: none;
 }
 
 .close {
+    display: block;
     animation: 1000ms slide-out;
     animation-timing-function: cubic-bezier(.63,-0.55,0,1.09);
 }
 
 .primary-navigation[data-visible] {
+    display: block;
     animation: 1000ms slide-in;
     animation-timing-function: cubic-bezier(.63,-0.55,0,1.09);
     transform: translateY(0%);
