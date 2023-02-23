@@ -23,7 +23,7 @@
           <span class="visually-hidden">Menu</span>
         </button>
         <nav class="primary-navigation nav" id="primary-navigation">
-          <ul aria-label="Primary" role="list">
+          <ul class="display-flex align-items-center" aria-label="Primary" role="list" style="--gap: var(--size-700)">
             <li><p data-section="home" class="test"><span>01.</span>Domů</p></li>
             <li><p data-section="about"><span>02.</span>O mně</p></li>
             <li><p data-section="projects"><span>03.</span>Projekty</p></li>
@@ -138,7 +138,7 @@
             <h2><span>03.</span>Projekty</h2>
           </div>
           <div class="container">
-            <div class="projects-grid / display-grid sm-margin-top-600" style="--gap: var(--size-700);">
+            <div class="projects-grid / display-grid sm-margin-top-600 sm-margin-auto" style="--gap: var(--size-700);">
               <div class="project"></div>
               <div class="project"></div>
               <div class="project"></div>
@@ -153,7 +153,7 @@
           </div>
           <div class="container">
             <p class="margin-top-500 padding-inline-700 fs-500 line-height-13 text-neutral-300 sm-margin-top-300">Níže mi můžete zanechat zprávu přes kontaktní formulář. Těším se na vaši zprávu a budu se těšit na možnost spolupráce.</p>
-            <form class="contact-form / display-grid sm-margin-top-700 sm-display-grid sm-justify-items-center" action="" style="@media (min-width: 60em) { --gap: 0 var(--size-600)}">
+            <form class="contact-form / display-grid margin-top-800 sm-margin-top-700 sm-display-grid sm-justify-items-center sm-gap gap" action="">
               <div class="column sm-display-grid sm-justify-items-center">
                 <input class="input subject" type="text" placeholder="Předmět...">
                 <input class="input email" type="email" placeholder="E-mail...">
