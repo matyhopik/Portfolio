@@ -135,6 +135,10 @@ html:focus-within {
     scroll-behavior: auto !important;
   }
 }
+
+section {
+    scroll-margin: 4.5rem;
+}
   
 /* General Styling */
 body {
@@ -144,6 +148,7 @@ body {
     color: var(--clr-text-body);
     background-color: var(--clr-background-body);
     line-height: 1.2;
+    scroll-behavior: smooth;
 }
 
 /* Button */
@@ -217,17 +222,14 @@ body {
     background: var(--clr-footer);
     border-radius: var(--size-100);
     transform: translateY(-135%);
-    display: none;
 }
 
 .close {
-    display: block;
     animation: 1000ms slide-out;
     animation-timing-function: cubic-bezier(.63,-0.55,0,1.09);
 }
 
 .primary-navigation[data-visible] {
-    display: block;
     animation: 1000ms slide-in;
     animation-timing-function: cubic-bezier(.63,-0.55,0,1.09);
     transform: translateY(0%);
@@ -237,13 +239,14 @@ body {
     margin-bottom: var(--size-700);
 }
 
-.primary-navigation > ul > li > a {
+.primary-navigation > ul > li > p {
+    cursor: pointer;
     color: var(--clr-neutral-200);
     font-size: var(--fs-400);
     font-weight: var(--fw-regular);
 }
 
-.primary-navigation > ul > li > a > span {
+.primary-navigation > ul > li > p > span {
     color: var(--clr-primary-400);
     padding-right: var(--size-100);
 }
