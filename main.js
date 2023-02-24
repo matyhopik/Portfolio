@@ -11,7 +11,7 @@ navButton.addEventListener('click', () => {
     navigation.classList.add('close');
 });
 
-const menuLinks = document.querySelectorAll('.primary-header nav ul li p');
+const menuLinks = document.querySelectorAll('.nav ul li p');
 
 menuLinks.forEach(link => {
     link.addEventListener('click', () => {

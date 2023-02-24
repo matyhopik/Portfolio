@@ -15,15 +15,15 @@
   <body>
 
     <header class="primary-header">
-      <div class="container / sm-display-flex sm-align-items-center sm-justify-content-between padding-inline-100">
-        <a href="/" class="header__title / fs-600 text-primary-400 ff-secondary">MH.</a>
+      <div class="container / sm-display-flex sm-align-items-center sm-justify-content-between sm-padding-inline-100">
+        <a href="/" class="header__title / sm-fs-600 text-primary-400 ff-secondary">MH.</a>
         <!-- Mobile => -->
         <button class="nav-responsive__button" aria-controls="primary-navigation" aria-expanded="false">
           <div class="nav-responsive__button-open"></div>
           <span class="visually-hidden">Menu</span>
         </button>
-        <nav class="primary-navigation" id="primary-navigation">
-          <ul aria-label="Primary" role="list">
+        <nav class="primary-navigation nav" id="primary-navigation">
+          <ul class="display-flex align-items-center" aria-label="Primary" role="list" style="--gap: var(--size-700)">
             <li><p data-section="home" class="test"><span>01.</span>Domů</p></li>
             <li><p data-section="about"><span>02.</span>O mně</p></li>
             <li><p data-section="projects"><span>03.</span>Projekty</p></li>
@@ -37,27 +37,31 @@
 
         <section class="home">
           <div class="container">
-            <div class="home-welcome / margin-top-700">
-              <p class="fs-500 text-primary-400">Jmenuji se</p>
-              <h1 class="padding-top-200 padding-bottom-400 fs-900 text-neutral-200 fw-bold">Matěj Hopp</h1>
-              <p class="fs-600 text-neutral-300">a jsem nadšený back-end developer studující na střední škole.</p>
+            <div class="home-welcome / sm-margin-top-700 margin-top-900">
+              <p class="sm-fs-500 text-primary-400">Jmenuji se</p>
+              <h1 class="sm-padding-top-200 sm-padding-bottom-400 sm-fs-900 text-neutral-200 fw-bold">Matěj Hopp</h1>
+              <p class="sm-fs-600 text-neutral-300">a jsem nadšený back-end developer studující na střední škole.</p>
             </div>
           </div>
         </section>
 
-        <section class="about">
+        <section class="about / screen-container">
           <div class="section-title">
             <h2><span>02.</span>O mně</h2>
           </div>
-          <div class="container / margin-top-200">
-            <div class="about-wrapper">
-              <div class="about-text / margin-top-400">
-                <p class="fs-550 text-neutral-200">Jmenuji se <span class="fw-bold text-primary-400">Matěj Hopp</span>,</p>
-                <p class="line-height-13 margin-top-400 fs-400 text-neutral-300">je mi 18 let a jsem studentem střední školy se
-                  zaměřením na IT. Vytvářím weby ať už z touhy se více naučit tak i ze zábavy. Pracuji v PHP frameworku Symfony a příležitostně i Laravel.Weby umím designovat a vytvářet jak pro počítače tak i pro mobilní
-                  zařízení.</p>
+          <div class="container / margin-top-700 sm-margin-top-200">
+            <div class="about-wrapper / padding-inline-800">
+              <div class="about-text / sm-margin-top-400">
+                <p class="fs-600 sm-fs-550 text-neutral-200">Jmenuji se <span class="fw-bold text-primary-400">Matěj Hopp</span></p>
+                <p class="fs-500 line-height-13 sm-margin-top-400 sm-fs-400 text-neutral-300">
+                  a je mi 18 let. Studuji na střední škole s zaměřením na IT a mám zájem o tvorbu webových stránek. Právě tuto dovednost se snažím neustále zdokonalovat, a to jak pro osobní zábavu, tak i pro rozšíření svých znalostí.
+                  <br><br>
+                  Mým hlavním zájmem je tvorba webových stránek v PHP frameworku Symfony a příležitostně také v Laravelu. Mám zkušenosti s tvorbou webů pro počítače i mobilní zařízení a snažím se, aby moje weby nejenom dobře fungovaly, ale i dobře vypadaly.
+                  <br><br>
+                  Tvorba webových stránek mi umožňuje nejenom rozvíjet své dovednosti, ale také mi přináší radost ze vzniku něčeho nového a užitečného. Těším se na možnost dále se v této oblasti zdokonalovat a vytvářet zajímavé projekty.
+                </p>
               </div>
-              <div class="about-skills / sm-display-grid margin-top-800 margin-bottom-700">
+              <div class="about-skills / display-flex justify-content-between sm-display-grid margin-bottom-500 sm-margin-top-800 sm-margin-bottom-700">
   
                 <div class="skill frontend">
                   <p class="skill-title">
@@ -122,19 +126,19 @@
                 </div>
   
               </div>
-              <div class="about-cv / sm-text-align-center">
-                <button class="button">Moje CV</button>
+              <div class="about-cv / text-align-right sm-text-align-center">
+                <a href="cv.pdf" target="_blank"><button class="button">Moje CV</button></a>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="projects">
+        <section class="projects / screen-container">
           <div class="section-title">
             <h2><span>03.</span>Projekty</h2>
           </div>
           <div class="container">
-            <div class="projects-grid / margin-top-600">
+            <div class="projects-grid / display-grid sm-margin-top-600 sm-margin-auto" style="--gap: var(--size-700);">
               <div class="project"></div>
               <div class="project"></div>
               <div class="project"></div>
@@ -143,12 +147,13 @@
           </div>
         </section>
 
-        <section class="contact">
+        <section class="contact / screen-container">
           <div class="section-title">
             <h2><span>04.</span>Kontakt</h2>
           </div>
           <div class="container">
-            <form class="contact-form / margin-top-700 sm-display-grid sm-justify-items-center" action="">
+            <p class="margin-top-500 padding-inline-700 fs-500 line-height-13 text-neutral-300 sm-margin-top-300">Níže mi můžete zanechat zprávu přes kontaktní formulář. Těším se na vaši zprávu a budu se těšit na možnost spolupráce.</p>
+            <form class="contact-form / display-grid margin-top-800 sm-margin-top-700 sm-display-grid sm-justify-items-center sm-gap gap" action="">
               <div class="column sm-display-grid sm-justify-items-center">
                 <input class="input subject" type="text" placeholder="Předmět...">
                 <input class="input email" type="email" placeholder="E-mail...">
@@ -156,7 +161,7 @@
               <div class="column">
                 <textarea class="input message" placeholder="Zpráva..." name="" id=""></textarea>
               </div>
-              <div class="submit / sm-text-align-center">
+              <div class="submit / margin-top-600 text-align-right sm-text-align-center">
                 <input class="button" type="submit" value="Odeslat">
               </div>
             </form>
@@ -165,26 +170,26 @@
 
     </main>
 
-    <footer class="primary-footer / padding-top-600">
-      <div class="container / sm-display-grid sm-justify-content-center sm-align-items-start" style="--gap: var(--size-700)">
-        <a href="/" class="footer__title / fs-600 text-primary-400 ff-secondary sm-text-align-center">MH.</a>
-        <ul class="footer__socials / sm-display-flex sm-justify-content-center" style="--gap: 1.813rem" role="list">
-          <li><a href=""><i class="fa-brands fa-github"></i></a></li>
-          <li><a href=""><i class="fa-regular fa-paper-plane"></i></a></li>
-          <li><a href=""><i class="fa-regular fa-file-lines"></i></a></li>
+    <footer class="primary-footer / sm-padding-top-600">
+      <div class="container / padding-bottom-400 sm-display-grid sm-justify-content-center sm-align-items-start justify-content-between" style="--gap: var(--size-700)">
+        <a href="/" class="footer__title / justify-self-start sm-fs-600 text-primary-400 ff-secondary sm-text-align-center">MH.</a>
+        <ul class="footer__socials / sm-display-flex sm-justify-content-center justify-content-start" style="--gap: 1.813rem" role="list">
+          <li><a href="https://github.com/matyhopik" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="mailto:hoppmatej@gmail.com" target="_blank"><i class="fa-regular fa-paper-plane"></i></a></li>
+          <li><a href="cv.pdf" target="_blank"><i class="fa-regular fa-file-lines" target="_blank"></i></a></li>
         </ul>
-        <nav class="primary-footer__nav">
+        <nav class="primary-footer__nav nav / margin-top-300">
           <ul aria-label="Footer" role="list">
-            <li><a href=""><span>01.</span>Domů</a></li>
-            <li><a href=""><span>02.</span>O mně</a></li>
-            <li><a href=""><span>03.</span>Projekty</a></li>
-            <li><a href=""><span>04.</span>Kontakt</a></li>
+            <li><p data-section="home" class="test"><span>01.</span>Domů</p></li>
+            <li><p data-section="about"><span>02.</span>O mně</p></li>
+            <li><p data-section="projects"><span>03.</span>Projekty</p></li>
+            <li><p data-section="contact"><span>04.</span>Kontakt</p></li>
           </ul>
         </nav>
-        <div class="footer__cv / sm-text-align-center">
-          <button class="button" type="small">Moje CV</button>
+        <div class="footer__cv / text-align-right sm-text-align-center">
+          <a href="cv.pdf" target="_blank"><button class="button" type="small">Moje CV</button></a>
         </div>
-        <p class="footer__copyright / margin-bottom-400 text-neutral-400 fs-400 fw-regular sm-text-align-center">Copyright 2023©</p>
+        <p class="footer__copyright / align-self-end text-align-right text-neutral-400 sm-fs-400 fw-regular sm-text-align-center sm-padding-block-400">Copyright 2023©</p>
       </div>
     </footer>
     
