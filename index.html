@@ -13,10 +13,12 @@
   </head>
 
   <body>
+    <div class="blob"></div>
+    <div class="blur"></div>
 
     <header class="primary-header">
       <div class="container / sm-display-flex sm-align-items-center sm-justify-content-between sm-padding-inline-100">
-        <a href="/" class="header__title / sm-fs-600 text-primary-400 ff-secondary">MH.</a>
+        <a title="Matěj Hopp" href="/" class="header__title / sm-fs-600 text-primary-400 ff-secondary">MH.</a>
         <!-- Mobile => -->
         <button class="nav-responsive__button" aria-controls="primary-navigation" aria-expanded="false">
           <div class="nav-responsive__button-open"></div>
@@ -24,10 +26,10 @@
         </button>
         <nav class="primary-navigation nav" id="primary-navigation">
           <ul class="display-flex align-items-center" aria-label="Primary" role="list" style="--gap: var(--size-700)">
-            <li><p data-section="home" class="test"><span>01.</span>Domů</p></li>
-            <li><p data-section="about"><span>02.</span>O mně</p></li>
-            <li><p data-section="projects"><span>03.</span>Projekty</p></li>
-            <li><p data-section="contact"><span>04.</span>Kontakt</p></li>
+            <li><p title="Domů" data-section="home" class="test"><span>01.</span>Domů</p></li>
+            <li><p title="O mně" data-section="about"><span>02.</span>O mně</p></li>
+            <li><p title="Projekty" data-section="projects"><span>03.</span>Projekty</p></li>
+            <li><p title="Kontakt" data-section="contact"><span>04.</span>Kontakt</p></li>
           </ul>
         </nav>
       </div>
@@ -41,6 +43,16 @@
               <p class="sm-fs-500 text-primary-400">Jmenuji se</p>
               <h1 class="sm-padding-top-200 sm-padding-bottom-400 sm-fs-900 text-neutral-200 fw-bold">Matěj Hopp</h1>
               <p class="sm-fs-600 text-neutral-300">a jsem nadšený back-end developer studující na střední škole.</p>
+            </div>
+            <div class="home-next-wrapper / display-flex justify-content-center align-items-center fs-700 text-primary-400 sm-display-none">
+              <div class="home-next">
+                <div class="home-next-text / fs-400">
+                  <p>Prozkoumat</p>
+                </div>
+                <div class="home-next-button">
+                  <i class="fa-solid fa-arrow-down-long"></i>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -170,24 +182,38 @@
 
     </main>
 
+    <div class="sides main-socials">
+      <ul class="main-socials__list / text-align-center" role="list">
+        <li><a href="https://github.com/matyhopik" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="cv.pdf" target="_blank"><i class="fa-regular fa-file-lines" target="_blank"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="return-to-top">
+      <i class="fa-solid fa-angle-up"></i>
+    </div>
+
+    <div class="sides main-email">
+      <a title="Můj e-mail" href="mailto:hoppmatej@gmail.com" target="_blank">hoppmatej@gmail.com</a>
+    </div>
+
     <footer class="primary-footer / sm-padding-top-600">
       <div class="container / padding-bottom-400 sm-display-grid sm-justify-content-center sm-align-items-start justify-content-between" style="--gap: var(--size-700)">
-        <a href="/" class="footer__title / justify-self-start sm-fs-600 text-primary-400 ff-secondary sm-text-align-center">MH.</a>
+        <a title="Matěj Hopp" href="/" class="footer__title / justify-self-start sm-fs-600 text-primary-400 ff-secondary sm-text-align-center">MH.</a>
         <ul class="footer__socials / sm-display-flex sm-justify-content-center justify-content-start" style="--gap: 1.813rem" role="list">
-          <li><a href="https://github.com/matyhopik" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-          <li><a href="mailto:hoppmatej@gmail.com" target="_blank"><i class="fa-regular fa-paper-plane"></i></a></li>
-          <li><a href="cv.pdf" target="_blank"><i class="fa-regular fa-file-lines" target="_blank"></i></a></li>
+          <li><a title="Git Hub" href="https://github.com/matyhopik" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a title="Moje CV" href="cv.pdf" target="_blank"><i class="fa-regular fa-file-lines" target="_blank"></i></a></li>
         </ul>
         <nav class="primary-footer__nav nav / margin-top-300">
           <ul aria-label="Footer" role="list">
-            <li><p data-section="home" class="test"><span>01.</span>Domů</p></li>
-            <li><p data-section="about"><span>02.</span>O mně</p></li>
-            <li><p data-section="projects"><span>03.</span>Projekty</p></li>
-            <li><p data-section="contact"><span>04.</span>Kontakt</p></li>
+            <li><p title="Domů" data-section="home" class="test"><span>01.</span>Domů</p></li>
+            <li><p title="O mně" data-section="about"><span>02.</span>O mně</p></li>
+            <li><p title="Projekty" data-section="projects"><span>03.</span>Projekty</p></li>
+            <li><p title="Kontakt" data-section="contact"><span>04.</span>Kontakt</p></li>
           </ul>
         </nav>
-        <div class="footer__cv / text-align-right sm-text-align-center">
-          <a href="cv.pdf" target="_blank"><button class="button" type="small">Moje CV</button></a>
+        <div class="footer__email / text-align-right sm-text-align-center">
+          <a title="Můj e-mail" class="text-neutral-400 fw-medium" href="mailto:hoppmatej@gmail.com" target="_blank">hoppmatej@gmail.com</a>
         </div>
         <p class="footer__copyright / align-self-end text-align-right text-neutral-400 sm-fs-400 fw-regular sm-text-align-center sm-padding-block-400">Copyright 2023©</p>
       </div>
