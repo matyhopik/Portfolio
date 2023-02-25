@@ -1,0 +1,7 @@
+Todo: 
+- udelat ty special efekty
+- kouknout na posouvani ty sipky
+- upravit design mezi 60em a mobile
+- udelat projects cardy
+- udelat contact form
+- upravit css kod
