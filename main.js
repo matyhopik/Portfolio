@@ -99,11 +99,6 @@ window.addEventListener('scroll', function() {
         }
         loudedThePoint = true;
     }
-
-    if (clicked) {
-        moveToNext.removeAttribute('data-action');
-        clicked = false;
-    }
 });
 
 scrollToTopButton.addEventListener('click', () => {
@@ -131,3 +126,17 @@ parent.addEventListener('mouseleave', () => {
     child.classList.add('text-close');
     child.classList.remove('text-open');
 });
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show');
+        }
+    });
+});
+
+const hiddenElements = document.querySelectorAll('.hid-left-200, .hid-left-400, .hid-left-600, .hid-left-800, hid-right-200, .hid-right-400, .hid-right-600, .hid-right-800, .hid-bottom-400, .hid-top-200, .hid-top-400');
+hiddenElements.forEach((el) => observer.observe(el))
