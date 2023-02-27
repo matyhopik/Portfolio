@@ -342,6 +342,25 @@ body {
 .about { margin-block: 10.813rem 8.75rem; }
 .contact { margin-block: 8.75rem 6.25rem; }
 
+.mail-sent-box {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    text-align: center;
+    line-height: 2.7rem;
+    width: 40ch;
+    height: 3rem;
+    border: 1px solid var(--clr-primary-400);
+    border-radius: 4px;
+    background-color: var(--clr-neutral-800);
+    transition: all .5s ease-out;
+}
+
+.visible {
+    opacity: .7;
+}
+
 /* Mobile ==> Header */
 .primary-header > .container { 
     position: relative;
@@ -693,25 +712,6 @@ body {
         position: fixed;
         z-index: 1;
         backdrop-filter: blur(200px);
-    }
-
-    .mail-sent-box {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        opacity: 0;
-        text-align: center;
-        line-height: 2.7rem;
-        width: 40ch;
-        height: 3rem;
-        border: 1px solid var(--clr-primary-400);
-        border-radius: 4px;
-        background-color: var(--clr-neutral-800);
-        transition: all .5s ease-out;
-    }
-
-    .visible {
-        opacity: .7;
     }
 
     .return-to-top[data-visible] {
