@@ -1,8 +1,9 @@
 TODO: 
-- udelat contact form
 - upravit css kod
 - mozna udelta navbar fix
 - asi zkontrolovat jestli tu mam vse z gitu
+- ikonu nahore
+- mozna loading screen
 
 FIXNOUT:
 - navbar kdyz jdu z velke obrazovky na malou
