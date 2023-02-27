@@ -20,7 +20,7 @@ navButton.addEventListener('click', () => {
     navigation.classList.add('close');
 });
 
-const menuLinks = document.querySelectorAll('.nav ul li p');
+const menuLinks = document.querySelectorAll('.nav ul li p, .primary-header .container p, .primary-footer .container p');
 
 menuLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -43,7 +43,7 @@ var visited = false;
 var loaded = false;
 
 const scrollToTopButton = document.querySelector('.return-to-top');
-const enableButton = document.querySelector('.about').offsetTop;
+const enableButton = document.querySelector('.about').offsetTop - (document.querySelector('.about').offsetHeight / 2);
 var scrolledToThePoint = false;
 var loudedThePoint = false;
 
@@ -129,14 +129,13 @@ parent.addEventListener('mouseleave', () => {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry);
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
         } else {
-            entry.target.classList.remove('show');
+            //entry.target.classList.remove('show');
         }
     });
 });
 
-const hiddenElements = document.querySelectorAll('.hid-left-200, .hid-left-400, .hid-left-600, .hid-left-800, hid-right-200, .hid-right-400, .hid-right-600, .hid-right-800, .hid-bottom-400, .hid-top-200, .hid-top-400');
-hiddenElements.forEach((el) => observer.observe(el))
+const hiddenElements = document.querySelectorAll('.hid-left-200, .hid-left-400, .hid-left-600, .hid-left-800, .hid-right-200, .hid-right-400, .hid-right-600, .hid-right-800, .hid-bottom-400, .hid-top-200, .hid-top-400');
+hiddenElements.forEach((el) => observer.observe(el));
