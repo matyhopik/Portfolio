@@ -276,15 +276,15 @@
           </div>
           <div class="container">
             <p class="hid-left-400 margin-top-500 padding-inline-700 fs-500 line-height-13 text-neutral-300 sm-margin-top-300">Níže mi můžete zanechat zprávu přes kontaktní formulář. Těším se na vaši zprávu a budu se těšit na možnost spolupráce.</p>
-            <form class="contact-form / margin-top-700 sm-display-grid sm-justify-items-center" action="">
-              <div class="column sm-display-grid sm-justify-items-center">
-                <input class="input subject" type="text" placeholder="Předmět...">
-                <input class="input email" type="email" placeholder="E-mail...">
+            <form class="contact-form / display-grid margin-top-800 sm-margin-top-700 sm-display-grid sm-justify-items-center sm-gap gap" action="">
+              <div class="column / sm-display-grid sm-justify-items-center">
+                <input class="input subject hid-left-400" type="text" placeholder="Předmět..." required>
+                <input class="input email hid-left-400" type="email" placeholder="E-mail..." required>
               </div>
-              <div class="column">
-                <textarea class="input message" placeholder="Zpráva..." name="" id=""></textarea>
+              <div class="column / hid-right-400">
+                <textarea class="input message" placeholder="Zpráva..." required maxlength="255"></textarea>
               </div>
-              <div class="submit / sm-text-align-center">
+              <div class="submit / hid-right-400 margin-top-600 text-align-right sm-text-align-center">
                 <input class="button" type="submit" value="Odeslat">
               </div>
             </form>
