@@ -1,11 +1,9 @@
 TODO: 
-- udelat contact form
-- upravit css kod
-- mozna udelta navbar fix
+- mozna loading screen
 
 FIXNOUT:
+- ???nevidím to???fixnout width je az moc v pravo,
 - navbar kdyz jdu z velke obrazovky na malou
-- mozna fixnout animace loading
 
 mailserverhoppportfolio@gmail.com
 33B7DABD65DA6E710DF7FE6BABB825969EBA

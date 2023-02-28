@@ -1,5 +1,4 @@
 const form = document.querySelector('.contact-form');
-
 const mailsentbox = document.querySelector('.mail-sent-box');
 
 function sendMsg(e) {
@@ -8,7 +7,8 @@ function sendMsg(e) {
     const subject = document.querySelector('.subject'),
             email = document.querySelector('.email'),
             message = document.querySelector('.message');
-            body = email.value + '<br/>' + message.value;
+            securityMessage = message.value.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+            body = '<h2>' + email.value + '</h2>' + '<br/>' + securityMessage;
 
     Email.send({
         SecureToken : "27912f6a-24b8-48af-aa0e-14e4236d9b04",
