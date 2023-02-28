@@ -664,7 +664,6 @@ body {
 /* Larger screens */ /* Full screen */
 @media (min-width: 50em) {
     .project-text-box { padding-right: 14rem; }
-    
     .home-welcome { padding: .688rem 3rem; }
 
     .about,

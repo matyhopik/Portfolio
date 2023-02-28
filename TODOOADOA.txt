@@ -1,4 +1,5 @@
 TODO: 
+- změnit text u projektů
 - mozna loading screen
 
 FIXNOUT:
