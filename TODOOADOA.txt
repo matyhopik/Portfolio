@@ -1,0 +1,13 @@
+TODO: 
+- mozna loading screen
+
+FIXNOUT:
+- ???nevidím to???fixnout width je az moc v pravo,
+- navbar kdyz jdu z velke obrazovky na malou
+
+mailserverhoppportfolio@gmail.com
+33B7DABD65DA6E710DF7FE6BABB825969EBA
+smtp.elasticemail.com
+2525
+
+27912f6a-24b8-48af-aa0e-14e4236d9b04
