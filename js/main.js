@@ -1,6 +1,6 @@
 const colorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 const linkElement = document.querySelector('link[rel="icon"]');
-linkElement.href = `files/img/code-solid-${colorScheme}.svg`;
+linkElement.href = `files/img/MH-${colorScheme}.svg`;
 
 const blob = document.querySelector('.blob');
 
