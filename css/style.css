@@ -243,12 +243,6 @@ section {
     .project > .hid-left-800 { transform: translateX(0); }
     .project > .hid-right-400 { transform: translateX(0); }
     .project > .hid-left-400 { transform: translateX(0); }
-
-    .show {
-        opacity: 1;
-        filter: blur(0);
-        transform: translateX(0);
-    }
 }
 
 
@@ -263,7 +257,7 @@ span { display: inline-block;}
 .about-text span:nth-child(3) { transition-delay: 400ms; }
 .about-text span:nth-child(5) { transition-delay: 600ms; }
 .about-cv { transition-delay: 400ms; }
-.email, .submit { transition-delay: 250ms; }
+.input-box, .submit { transition-delay: 250ms; }
 .footer__copyright { transition-delay: 250ms; }
 .footer__socials > li:nth-child(1) { transition-delay: 250ms; }
 .footer__socials > li:nth-child(2) { transition-delay: 300ms; }
@@ -511,9 +505,7 @@ body {
 .skill-title::before { margin-right: 0.375rem; }
 .skill-title::after { margin-left: 0.375rem; }
 
-.skill-content {
-    margin-top: var(--size-200);
-}
+.skill-content { margin-top: var(--size-200); }
 
 .skill-content > li {
     font-size: var(--fs-500);
@@ -597,7 +589,9 @@ body {
     width: 21.75rem;
     height: 3.5rem;
     border-radius: var(--size-300);
+    -webkit-border-radius: var(--size-300);
     border: 0;
+    outline: 0;
     background: var(--clr-neutral-800);
     font-size: var(--fs-500);
     color: var(--clr-neutral-300);
@@ -618,7 +612,7 @@ body {
 
 .input:focus,
 .input:not(:placeholder-shown) {
-    outline: 1px solid var(--clr-primary-400);
+    border: 1px solid var(--clr-primary-400);
 }
 
 .sm-gap { --gap: var(--size-400) }
@@ -669,13 +663,9 @@ body {
 
 /* Larger screens */ /* Full screen */
 @media (min-width: 50em) {
-    .project-text-box {
-        padding-right: 14rem;
-    }
+    .project-text-box { padding-right: 14rem; }
     
-    .home-welcome {
-        padding: .688rem 3rem;
-    }
+    .home-welcome { padding: .688rem 3rem; }
 
     .about,
     .contact,
@@ -712,6 +702,7 @@ body {
         position: fixed;
         z-index: 1;
         backdrop-filter: blur(200px);
+        -webkit-backdrop-filter: blur(200px);
     }
 
     .return-to-top[data-visible] {

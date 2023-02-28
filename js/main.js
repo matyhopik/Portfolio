@@ -1,3 +1,7 @@
+const colorScheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+const linkElement = document.querySelector('link[rel="icon"]');
+linkElement.href = `files/img/code-solid-${colorScheme}.svg`;
+
 const blob = document.querySelector('.blob');
 
 document.addEventListener("mousemove", function(event) {

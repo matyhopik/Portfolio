@@ -1,14 +1,9 @@
 TODO: 
-- upravit css kod
-- mozna udelta navbar fix
-- ikonu nahore
 - mozna loading screen
 
 FIXNOUT:
-- fixnout safari: border, width je az moc v pravo,
+- ???nevidím to???fixnout width je az moc v pravo,
 - navbar kdyz jdu z velke obrazovky na malou
-- mozna fixnout animace loading
-- mozna fixnout git
 
 mailserverhoppportfolio@gmail.com
 33B7DABD65DA6E710DF7FE6BABB825969EBA
