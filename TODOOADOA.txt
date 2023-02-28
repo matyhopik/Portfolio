@@ -5,6 +5,7 @@ TODO:
 - mozna loading screen
 
 FIXNOUT:
+- fixnout safari: border, width je az moc v pravo,
 - navbar kdyz jdu z velke obrazovky na malou
 - mozna fixnout animace loading
 - mozna fixnout git
