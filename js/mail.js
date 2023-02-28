@@ -1,8 +1,8 @@
-const form = document.querySelector('.contact-form');
-const mailsentbox = document.querySelector('.mail-sent-box');
+const form = document.querySelector('.contact-form'),
+      mailsentbox = document.querySelector('.mail-sent-box');
 
+/* Sends email on my email */
 function sendMsg(e) {
-    console.log('test')
     e.preventDefault();
     const subject = document.querySelector('.subject'),
             email = document.querySelector('.email'),
