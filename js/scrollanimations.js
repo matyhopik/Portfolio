@@ -1,4 +1,4 @@
-const header = document.querySelector('.primary-header'),
+const headerNav = document.querySelector('.primary-header'),
       sideSocials = document.querySelector('.main-socials'),
       sideMail = document.querySelector('.main-email'),
       footerHeight = document.querySelector('.primary-footer').offsetHeight,
@@ -24,7 +24,7 @@ window.addEventListener('scroll', function() {
         if (navigation.hasAttribute("data-visible")) {
             navButton.setAttribute("aria-expanded", false);
             navigation.toggleAttribute("data-visible");
-            header.toggleAttribute("data-overlay");
+            headerNav.toggleAttribute("data-overlay");
         }
     }
 
