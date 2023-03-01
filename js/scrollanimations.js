@@ -82,6 +82,9 @@ moveToNext.addEventListener('click', () => {
     clicked = true;
 });
 
+const parent = document.querySelector('.home-next'),
+      child = document.querySelector('.home-next-text');
+
 /* Hover effect for home arrow */
 parent.addEventListener('mouseenter', () => {
     child.classList.add('text-open');
